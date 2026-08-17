@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
-import drRanaPhoto from '@/imports/image.png'
+import drRanaHero from '@/imports/image-15.png'
+import drRanaAbout from '@/imports/image-16.png'
+import clinicLogo from '@/imports/image-14.png'
 
 type Lang = 'en' | 'ar'
 
@@ -246,11 +248,7 @@ export default function App() {
       <nav className={`nav ${scrolled ? 'dn' : 'up'}`}>
         <div className="w ni">
           <div className="logo">
-            <div className="lm">R</div>
-            <div className="ln">
-              <span className="ln-a">Dr Rana's</span>
-              <span className="ln-b">Aesthetic Health Centre</span>
-            </div>
+            <img src={clinicLogo} alt="Dr Rana's Aesthetic Health Centre" className="nav-logo-img" />
           </div>
           <div className="nl">
             <a href="#services" className="na">{t.navServices}</a>
@@ -309,7 +307,7 @@ export default function App() {
             <div className="hr-ring2"/>
             <div className="hr-ring"/>
             <div className="hr-arch">
-              <img src={drRanaPhoto} alt="Dr Rana at her Aesthetic Health Centre in Riffa, Bahrain" loading="eager"/>
+              <img src={drRanaHero} alt="Dr Rana at her Aesthetic Health Centre in Riffa, Bahrain" loading="eager"/>
             </div>
           </div>
         </div>
@@ -402,7 +400,7 @@ export default function App() {
           <div className="about-g">
             <div className="about-img-w">
               <div className="about-img">
-                <img src={drRanaPhoto} alt="Dr Rana — Aesthetic Medicine Specialist" loading="lazy"/>
+                <img src={drRanaAbout} alt="Dr Rana — Aesthetic Medicine Specialist" loading="lazy"/>
               </div>
               <div className="about-badge">
                 <div className="ab-n fr">Dr Rana</div>
@@ -525,11 +523,7 @@ export default function App() {
           <div className="fg">
             <div>
               <div className="f-brand">
-                <div className="f-em">R</div>
-                <div>
-                  <div className="f-nm">Dr Rana's</div>
-                  <div className="f-sb">Aesthetic Health Centre</div>
-                </div>
+                <img src={clinicLogo} alt="Dr Rana's Aesthetic Health Centre" className="f-logo-img" />
               </div>
               <p className="f-p">{t.ftTx}</p>
               <p className="f-ar">مركز الدكتورة رنا الصحي للتجميل</p>
@@ -550,8 +544,8 @@ export default function App() {
               </div>
               <div className="f-ch" style={{ marginTop:'1rem' }}>{t.ftHours}</div>
               <div className="fc">
-                <span style={{ display:'block', fontSize:'.77rem', color:'rgba(255,255,255,.38)' }}>{t.ftH1}</span>
-                <span style={{ display:'block', fontSize:'.77rem', color:'rgba(255,255,255,.38)' }}>{t.ftH2}</span>
+                <span style={{ display:'block', fontSize:'.77rem', color:'var(--pt3)' }}>{t.ftH1}</span>
+                <span style={{ display:'block', fontSize:'.77rem', color:'var(--pt3)' }}>{t.ftH2}</span>
               </div>
             </div>
           </div>
